@@ -16,7 +16,7 @@ countries = st.sidebar.multiselect("Select Country", df['Area'].unique())
 # Apply Filters
 filtered = df[
     (df['Category'].isin(categories) if categories else True) &
-    (df['Area'].isin(countries) if countries else True) &
+    (df['Area'].isin(countries) if countries else True) ]
    
 
 st.subheader("📈 Forecasted Trend")
